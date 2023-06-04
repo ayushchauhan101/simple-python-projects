@@ -9,23 +9,16 @@ size_letters = int(input("How many letters would you like in your password?\n"))
 size_symbols = int(input(f"How many symbols would you like?\n"))
 size_numbers = int(input(f"How many numbers would you like?\n"))
 
-# size_numbers = 3
-# size_letters = 6
-# size_symbols = 2
 password = []
 
 for char in range(0, size_letters):
     password += random.choice(letters)
-    # print(password)
 
 for char in range(0, size_symbols):
     password += random.choice(symbols)
-    # print(password)
 
 for char in range(0, size_numbers):
     password += random.choice(numbers)
-    # print(password)
-# print(password)
 
 random.shuffle(password)
 print(f"your new password is:", end=" ")
